@@ -30,3 +30,10 @@
         For next steps, read the
         = succeed "." do
           %a{:href => "http://docs.aws.amazon.com/codepipeline/latest/userguide/welcome.html"} AWS CodePipeline Documentation
+      %h3 LogIn 
+      %form
+        = label :user, :email, "Email"
+        = text_field :user, :email
+        = label :user, :password
+        = password_field :user, :password
+        %input{:type => "submit", :value => "Sign in"}
